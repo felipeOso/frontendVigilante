@@ -1,11 +1,14 @@
+import { IngresoComponent } from './ingreso/ingreso.component';
 import { AppComponent } from './app.component';
 import {RouterModule, Routes} from '@angular/router'
 import { NgModule } from "@angular/core";
 
 
 const routes: Routes =[
-    {path : '', redirectTo:'/appComponent', pathMatch:'full'},
-    {path:'appComponent', component: AppComponent}
+    {path : '', redirectTo:'/ingresoComponent', pathMatch:'full'},
+    {path:'appComponent', component: AppComponent},
+    {path:'ingresoComponent', component: IngresoComponent},
+    
 ];
 @NgModule
     (
